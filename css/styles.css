@@ -7431,6 +7431,9 @@ textarea.form-control-lg {
 .bg-dark {
   background-color: #212529 !important;
 }
+.bg-muted {
+  background-color: #6c757d !important;
+}
 
 .bg-body {
   background-color: #fff !important;
