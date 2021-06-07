@@ -10941,6 +10941,10 @@ hr.divider-light {
   }
 }
 
+.main-nav-item {
+  text-transform: uppercase;
+}
+
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
