@@ -37,6 +37,8 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+
+
 *,
 *::before,
 *::after {
@@ -7340,6 +7342,10 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   color: #f4623a !important;
+}
+
+.text-dark-red {
+  color: #6e1111 !important;
 }
 
 .text-secondary {
