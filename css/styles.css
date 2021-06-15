@@ -10952,9 +10952,7 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: rgb(0 0 0 / 30%)
-    
-
+    background-color: rgb(0 0 0 / 30%);
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);

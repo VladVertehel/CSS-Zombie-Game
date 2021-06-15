@@ -1,5 +1,14 @@
+@font-face {
+  font-family: Quest;
+  src: url(quest.ttf);
+}
+@font-face {
+  font-family: Text;
+  src: url(text.ttf);
+}
 .finish,
 .start{
+  font-family: 'Quest';
   display: block;
   width: fit-content;
   width: -moz-fit-content;
@@ -7,16 +16,18 @@
   text-transform: uppercase;
   font-weight: bolder;
   text-decoration: none;
-  font-size: xx-large;
-  color: rgb(167, 21, 21);
+  font-size: 100px;
+  color: rgb(0, 0, 0);
 }
 
 .quiz {
-    overflow: hidden;
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: aliceblue;
+    
+    font-family: 'Text';
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(255, 255, 255);
     height: 100vh;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-content: center;
   }
@@ -34,7 +45,7 @@
     visibility: hidden;
     top: 0;
     left: 0;
-    background: aliceblue;
+    background: rgb(255, 255, 255);
   }
   [id^="next-lvl"]:target,
 #finish:target {
@@ -43,12 +54,20 @@
 }
 
 .answer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
   background: rgb(0, 0, 0);
-  color:#fff;
-  display: block;
+  color:rgb(255, 255, 255);
   height: 50px;
   font-size: xx-large;
   text-align: center;
-  margin: 0px;
+  margin: 10px;
+  width: 700px;
 }
-
+.answers{
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
