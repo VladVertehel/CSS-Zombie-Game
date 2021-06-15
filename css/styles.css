@@ -37,6 +37,18 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+.text-light-1 {
+  color: #f8f9fa;
+}
+
+.class {
+  transition: 5s;
+  transform: translateZ(-5);
+}
+
+
+
+
 
 
 *,
@@ -50,6 +62,31 @@
     scroll-behavior: smooth;
   }
 }
+
+/* доп-scale
+.translate-left:hover {
+  transform: scale(1.05);
+  transition: all 0.35s ease-in-out;
+}
+
+.translate-right:hover {
+  transform: scale(1.05);
+  transition: all 0.35s ease-in-out;
+}
+*/
+
+
+.scale {
+  transition: all 0.35s ease-in-out;  /* Время эффекта */
+  
+}
+
+ .scale:hover {
+   /* Увеличиваем масштаб */
+  z-index: 5;
+  transform: scale(1.05);
+  position: relative;
+ }
 
 body {
   margin: 0;
@@ -442,7 +479,7 @@ output {
 }
 
 iframe {
-  border: 0;
+  border: 10px solid rgb(0, 0, 0);
 }
 
 summary {
@@ -3951,6 +3988,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  height: 71px;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -10890,7 +10928,7 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  background-color: rgb(0 0 0 / 30%);
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
@@ -10914,7 +10952,8 @@ hr.divider-light {
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
-    background-color: transparent;
+    background-color: rgb(0 0 0 / 30%)
+    
 
   }
   #mainNav .navbar-brand {
@@ -10935,7 +10974,7 @@ hr.divider-light {
   }
   #mainNav.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
+    background-color: rgb(0 0 0 / 30%);
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #212529;
@@ -10953,6 +10992,10 @@ hr.divider-light {
 
 .main-nav-item {
   text-transform: uppercase;
+}
+
+.masthead:hover + #mainNav {
+  background: none;
 }
 
 header.masthead {
@@ -11006,9 +11049,10 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
+  filter: none;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-category, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-category {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11020,5 +11064,5 @@ header.masthead h1, header.masthead .h1 {
   font-size: 1.2rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
-  opacity: 1;
+  opacity: 0.1;
 }
