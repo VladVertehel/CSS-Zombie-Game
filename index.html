@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Creative - Start Bootstrap Theme</title>
+        
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <link rel="icon" type="image/x-icon" href="assets/zombie.ico" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
@@ -46,7 +46,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto my-2 my-lg-0">
                 <li class="nav-item main-nav-item"><a class="nav-link" href="#about">Опис</a></li>
-                <li class="nav-item main-nav-item"><a class="nav-link" href="#portfolio">Скріншоти</a></li>
+                
                 <li class="nav-item main-nav-item"><a class="nav-link" href="#game">Гра</a></li>
                 <li class="nav-item main-nav-item"><a class="nav-link" href="#quest">Текстовий квест</a></li>
                 <li class="nav-item main-nav-item"><a class="nav-link" href="#card">Розробники</a></li>
@@ -57,14 +57,19 @@
 </nav>
 
         <!-- About-->
-        <section class="page-section bg-primary" id="about">
+        <section class="page-section bg-about" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">Опис</h2>
                         <hr class="divider divider-light" />
-                        <p class="text-white-75 mb-4">Аркада створена за допомогою HTML та CSS. Гравцю необхідно, використовуючи мишку, вбивати ворогів і просуватися далі по рівнях.<br>Також, використовуючи ці ж технології, розроблено демо версію квесту для нашого Telegram-боту.</p>
-                        <a class="btn btn-light btn-xl" href="#game">Розпочати гру!</a>
+                        <p class="text-white-75 mb-4">Аркада створена за допомогою HTML та CSS. Гравцю необхідно, використовуючи мишку, вбивати ворогів і просуватися далі по рівнях.<br>Також, використовуючи ці ж технології, розроблено демо версію квесту для нашого телеграм боту.</p>
+                        <div class="container">
+                            <a class="btn btn-light btn-xl" style="margin: 5px;" href="#game">Розпочати гру!</a>
+                            <br>
+                            <a class="btn btn-light btn-xl" style="margin: 5px; padding: 1.25rem 5.0059rem;" href="https://t.me/ZombQuest_bot">Бот</a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -74,46 +79,12 @@
         <div id="portfolio">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-4 col-sm-6  scale">
-                       
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
-                            
-                          
-                    </div>
-                    <div class="col-lg-4 col-sm-6 scale ">
-                        
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
-                        
-                    </div>
-                    <div class="col-lg-4 col-sm-6  scale">
-                        
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
-                           
-                        
-                    </div>
-                    <div class="col-lg-4 col-sm-6  scale">
-                        
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="..." />
-                          
-                        
-                    </div>
-                    <div class="col-lg-4 col-sm-6 scale">
-                        
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="..." />
-                            
-                        
-                    </div>
-                    <div class="col-lg-4 col-sm-6  scale">
-                        
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="..." />
-                            
-                        
-                    </div>
+
                 </div>
             </div>
         </div>
-        <!-- Call to action-->
-        <section class="page-section bg-dark text-white">
+        <!-- Gayme -->
+        <section class="page-section bg-dark text-white game-padding">
         <div id="game">
             <iframe class="shooter" src="zombie shooter/index.html" title="description" width="100%" height="650px"></iframe>
             <iframe id="quest" src="quiz game v3.0/index.html" title="description" height="900px" width="100%"></iframe>
@@ -135,7 +106,7 @@
                                         <div class="card-body">
                                           <h4 class="card-title">Владислав Вертегел</h4>
                                           <p class="card-text">Team Lead</p>
-                                          <a href="https://github.com/VladVertehel"   target="_blank" ><i class="bi bi-github fs-2 mb-3 text-dark-red"></i></a>
+                                          <a href="https://github.com/VladVertehel"   target="_blank" ><i class="bi bi-github fs-2 mb-3 text-dark-red github-link"></i></a>
                                         </div>
                                       </div>
                                   
@@ -147,7 +118,7 @@
                                         <div class="card-body">
                                           <h4 class="card-title">Владислав Прущак</h4>
                                           <p class="card-text">Developer</p>
-                                          <a href="https://github.com/VladislavKonstantinovich" class="bi bi-github fs-2 mb-3 text-dark-red" target="_blank" ></a>
+                                          <a href="https://github.com/VladislavKonstantinovich" class="bi bi-github fs-2 mb-3 text-dark-red github-link" target="_blank" ></a>
                                         </div>
                                       </div>
                                   
@@ -159,7 +130,7 @@
                                         <div class="card-body">
                                           <h4 class="card-title">Міхаель Люлькіс</h4>
                                           <p class="card-text">Developer</p>
-                                          <a href="https://github.com/lulkismichael" class="bi bi-github fs-2 mb-3 text-dark-red"  target="_blank" ></a>
+                                          <a href="https://github.com/lulkismichael" class="bi bi-github fs-2 mb-3 text-dark-red github-link"  target="_blank" ></a>
                                         </div>
                                       </div>
                                   
@@ -170,11 +141,11 @@
                     </div>
                 </section>
         <!-- Contact-->
-        <section class="page-section" id="contact">
+        <section class="page-section" >
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
-                        <h2 class="mt-0" style="color: #f8f9fa;">Для контакту з нами залиште свої дані для зв'язку</h2>
+                        <h2 id="contact" class="mt-0" style="color: #f8f9fa;">Для контакту з нами залиште свої дані для зв'язку</h2>
                         <hr class="divider" />
                     </div>
                 </div>
@@ -183,38 +154,25 @@
                         <form>
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="inputName" type="text" placeholder="Enter your name..." />
-                                <label for="inputName">Full name</label>
+                                <label for="inputName">Ім'я</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                <label for="inputEmail">Email address</label>
+                                <label for="inputEmail">Адреса електронної пошти</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="inputPhone" type="tel" placeholder="(123) 456-7890" />
-                                <label for="inputPhone">Phone number</label>
+                                <label for="inputPhone">Номер телефону</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <textarea class="form-control" id="inputMessage" type="text" placeholder="Enter your message here..." style="height: 10rem"></textarea>
-                                <label for="inputMessage">Message</label>
+                                <label for="inputMessage">Повідомлення</label>
                             </div>
-                            <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit">Submit</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit">Надіслати</button></div>
                         </form>
                     </div>
                 </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi bi-phone-fill fs-2 mb-3 text-dark-red"></i>
-                        <div class="text-light-1">+1 (555) 123-4567</div>
-                    </div>
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi bi-envelope-fill fs-2 mb-3 text-dark-red"></i>
-                        <div class="text-light-1">Jefferson County, Missouri, United States of America</div>
-                    </div>
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi bi-telegram fs-2 mb-3 text-dark-red"></i>
-                        <div class="text-light-1">+1 (555) 123-4567</div>
-                    </div>
-                </div>
+                
             </div>
         </section>
         <!-- Footer-->
