@@ -3001,6 +3001,12 @@ textarea.form-control-lg {
   background-color: #9c1111;
   border-color: #9c1111;
 }
+
+.github-link:hover {
+  color: #9c1111 !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
   background-color: #cf5331;
@@ -7438,6 +7444,10 @@ textarea.form-control-lg {
   color: inherit !important;
 }
 
+.bg-about {
+  background-color: #212529 !important;
+}
+
 .bg-primary {
   background-color: #6e1111 !important;
 }
@@ -10898,8 +10908,13 @@ body {
 
 .page-section {
   background-color: rgb(17, 17, 17);
-  padding: 8rem 0;
+  padding: 3rem 0;
 }
+
+.game-padding {
+  padding: 0 !important; 
+}
+
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
@@ -10927,6 +10942,7 @@ hr.divider-light {
 }
 
 #mainNav {
+  display: none;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: rgb(0 0 0 / 30%);
   transition: background-color 0.2s ease;
@@ -10951,8 +10967,9 @@ hr.divider-light {
 }
 @media (min-width: 992px) {
   #mainNav {
+    display: flex;
     box-shadow: none;
-    background-color: rgb(0 0 0 / 30%);
+    background-color: rgb(0 0 0 / 50%);
   }
   #mainNav .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
